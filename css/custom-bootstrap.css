@@ -5209,7 +5209,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 90%;
     margin: 30px auto;
   }
   .modal-content {
@@ -6361,11 +6361,48 @@ h3.text-secondary {
 .cta-btn {
   text-align: center;
 }
+
+  .more-btn{
+    margin-top: 20px;
+  }
+
+  .goAheadMore .alignnone{
+    border-color: #f7764d;
+  }
+
+  .goAheadMore .more-btn a{
+    background: #f7764d;
+  }
+
+  .goAheadMore .more-btn a:hover{
+    background: #d56743;
+  }
+ 
+  .deceptionMore .alignnone{
+    border-color: #f7764d;
+  }
+
+ .deceptionMore .more-btn a{
+    background: #dcb5ba
+ }
+
+  .deceptionMore .more-btn a:hover{
+    background: #dcb5ba;
+    cursor: not-allowed;
+ }
+
 @media (min-width: 768px) {
   .cta-btn {
     text-align: right;
   }
+
+  .more-btn{
+    text-align: center;
+  }
 }
+
+
+
 .cta__alt {
   background: #ffffff;
   border: 1px solid #ecede6;

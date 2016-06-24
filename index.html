@@ -123,6 +123,25 @@
 			</header>
 		</div>
 		
+			<!-- Modal
+		================================================== -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel"></h4>
+			</div>
+			<div class="modal-body">
+				<div class="appendImg"></div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+		</div>
+		<!--modal-->
 
 		<!-- Slider
 		================================================== -->
@@ -180,7 +199,7 @@
 			<!-- What we do -->
 			<section class="section">
 				<div class="title-bordered" data-animation="fadeInUp" data-animation-delay="0">
-					<h2>What we do</h2>
+					<h2>Work at Rebel Minds</h2>
 				</div>
 				
 				<div class="row">
@@ -194,18 +213,28 @@
 							<div class="icobox-desc">
 								<div class="icobox-desc-inner1">
 									<div class="icobox-desc-inner2">
-										<h3><a href="#">Vestibulum ante ipsum primis</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, eros at hendrerit volutpat, orci est viverra magna, ac pretium libero nisl tincidunt a1nte.</p>
+										<h3><a href="#">Plumis</a></h3>
+										<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, eros at hendrerit volutpat, orci est viverra magna, ac pretium libero nisl tincidunt a1nte.</p>-->
+										<p>Plumis needed a solid platform to allow installers to design fire sprinkler installations efficiently, legally and on-the-go.</p>
+										<p>The Automist toolkit is an intelligent fire sprinkler design platform that allows installers to plan, simulate and share sprinkler systems.</p>
 									</div>
 								</div>
 							</div>
 							<div class="icobox-thumbs">
 								<ul class="cat-thumbs">
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-9.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-10.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-1.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-2.jpg" alt="" class="img-responsive"></a></li>
+									<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/plumis1.png','Plumis Automist Tool - Importing Blueprint')" class="alignnone"><img src="img/plumis1.png" alt="" class="img-responsive"></a></li>
+									<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/plumis2.png','Plumis Automist Tool - Measuring Floorplan')"  class="alignnone"><img src="img/plumis2.png" alt="" class="img-responsive"></a></li>
+									<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/plumis3.png','Plumis Automist Tool - Drawing Sprayheads')"  class="alignnone"><img src="img/plumis3.png" alt="" class="img-responsive"></a></li>
+									<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/plumis4.png','Plumis Automist Tool - Export Drawing')"  class="alignnone"><img src="img/plumis4.png" alt="" class="img-responsive"></a></li>
 								</ul>
+
+								<div class="cta-btn more-btn plumisMore">
+									<a href="http://rebelminds.com/work/plumis" class="btn btn-primary btn-lg">See More</a>
+								</div>
+
+
+
+
 							</div>
 						</div>
 					</div>
@@ -219,18 +248,26 @@
 							<div class="icobox-desc">
 								<div class="icobox-desc-inner1">
 									<div class="icobox-desc-inner2">
-										<h3><a href="#">Phasellus ut magna leo</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, eros at hendrerit volutpat, orci est viverra magna, ac pretium libero nisl tincidunt a1nte.</p>
+										<h3><a href="#">Go-Ahead</a></h3>
+										<p>Go-Ahead London operate over 2,300 buses and employ over 7,600 staff operating from various sites in the capital.</p>
+										<p>Their new website comes with a custom made content management system and an interactive map where users check and map their travel plans.</p>
+
 									</div>
 								</div>
 							</div>
-							<div class="icobox-thumbs">
-								<ul class="cat-thumbs">
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-9.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-10.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-1.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-2.jpg" alt="" class="img-responsive"></a></li>
-								</ul>
+							<div class="goAheadMore">
+								<div class="icobox-thumbs">
+									<ul class="cat-thumbs">
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/goAhead1.png','Go-Ahead London - Home Page')" class="alignnone"><img src="img/goAhead1.png" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/goAhead2.png','Go-Ahead London - Events Page')" class="alignnone"><img src="img/goAhead2.png" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/goAhead3.png','Go-Ahead London - Journey Planner')" class="alignnone"><img src="img/goAhead3.png" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/goAhead4.png','Go-Ahead London - News Page')"class="alignnone"><img src="img/goAhead4.png" alt="" class="img-responsive"></a></li>
+									</ul>
+
+									<div class="cta-btn more-btn">
+										<a href="http://www.go-ahead-london.com/" class="btn btn-primary btn-lg">Visit Website</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -244,18 +281,26 @@
 							<div class="icobox-desc">
 								<div class="icobox-desc-inner1">
 									<div class="icobox-desc-inner2">
-										<h3><a href="#">Donec malesuada sem sed</a></h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, eros at hendrerit volutpat, orci est viverra magna, ac pretium libero nisl tincidunt a1nte.</p>
+										<h3><a href="#">Deception</a></h3>
+										<p>A mobile game which sees players turn on each other as they try to work out who they can trust.</p>
+										<p>An internal product based on the popular physical card game Avalon, pitched and developed at Rebel Minds.</p>
 									</div>
 								</div>
 							</div>
-							<div class="icobox-thumbs">
-								<ul class="cat-thumbs">
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-9.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-10.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-1.jpg" alt="" class="img-responsive"></a></li>
-									<li><a href="#" class="alignnone"><img src="http://ecobox.dan-fisher.com/images/samples/product-thumb-2.jpg" alt="" class="img-responsive"></a></li>
-								</ul>
+							<div class="deceptionMore">
+								<div class="icobox-thumbs">
+									<ul class="cat-thumbs">
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/deception1.png','Deception - Title Screens')" class="alignnone"><img src="img/deception1.png" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/deception4.jpg','Deception - Mission Screens')" class="alignnone"><img src="img/deception4.jpg" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/deception2.png','Deception - Timeline')"  class="alignnone"><img src="img/deception2.png" alt="" class="img-responsive"></a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendImage('img/deception3.png','Deception - How To Play')" class="alignnone"><img src="img/deception3.png" alt="" class="img-responsive"></a></li>
+									</ul>
+
+								<div class="cta-btn more-btn">
+									<a href="#" class="btn btn-primary btn-lg">In Development</a>
+								</div>
+							</div>
+
 							</div>
 						</div>
 					</div>
@@ -676,6 +721,8 @@
 	<script src="http://ecobox.dan-fisher.com/js/jquery.magnific-popup.min.js"></script>
 	<!-- Magnific Popup -->
 	<script src="http://ecobox.dan-fisher.com/js/jquery.appear.js"></script>
+	
+	<script src="js/index.js"></script>
 
 
 	<!-- Init File -->
