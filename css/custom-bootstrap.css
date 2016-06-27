@@ -11287,6 +11287,7 @@ a:focus {
   visibility: hidden;
   line-height: 0;
   height: 0;
+  
 }
 /* display none until init */
 .owl-carousel {
@@ -11294,6 +11295,7 @@ a:focus {
   position: relative;
   width: 100%;
   -ms-touch-action: pan-y;
+      padding-left: 8px;
 }
 .owl-carousel .owl-wrapper {
   display: none;
@@ -11389,7 +11391,14 @@ a:focus {
   border-radius: 2px;
   background: rgba(119, 187, 151, 0.1);
   margin-right: 8px;
+  position: absolute; 
+  bottom: 100px;
 }
+
+.prev-btn{
+left: 0px;
+}
+
 .prev-btn:hover,
 .next-btn:hover {
   cursor: pointer;

@@ -3,7 +3,7 @@ Plumis needed a solid platform to allow installers to design fire sprinkler inst
 I created an intelligent fire sprinkler design platform that allows installers to plan, simulate and share sprinkler systems.
 
 Go-Ahead London companies operate over 2,300 buses and employ over 7,600 staff operating from various sites in the capital.
-Go-Ahead needed a beautiful looking website and a custom made content management system where they could blog, update media and bus route information.
+I designed/developed their new website with a custom made content management system where they could blog, update media and have their users check and map their travel plans.
 I also created an interative mapping tool that uses the TFL to update users in real time with Go-Ahead bus information. 
 
 A mobile game which sees players turn on each other as they try to work out who they can trust.
