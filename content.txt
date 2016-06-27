@@ -9,3 +9,5 @@ I also created an interative mapping tool that uses the TFL to update users in r
 A mobile game which sees players turn on each other as they try to work out who they can trust.
 Based on the popular physical card game Avalon, players must complete or sabotage global peace missions in a high-stakes game of espionage. 
 An internal product I pitched and co-developed at Rebel Minds.  
+
+

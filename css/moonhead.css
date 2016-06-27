@@ -1,0 +1,86 @@
+/* nav bar */
+
+
+
+/*
+* lol-commit-feed
+*/
+.lol-commit-feed{
+    display: none;
+}
+
+.lol-commit-feed .owl-carousel{
+    display: initial;
+}
+
+.lol-commit-feed .owl-carousel .item{
+    width: 300px;
+    float: left;
+}
+
+
+.lol-commit-feed .next-btn, .lol-commit-feed .prev-btn{
+    position: relative;
+    margin-top: 50px;
+    bottom: 0px;   
+}
+
+/*
+* Moonhead video
+*/
+
+.fullscreen-bg{
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 510px;
+}
+
+#moonvideo{
+    position: absolute;
+    right: 0px;
+    display: none;
+} 
+
+.gradientBG{
+  z-index: 10;
+  width: 100%;
+  height: 510px;
+  top: 0px;
+  /*background: url("../img/grandientBG.png") repeat center center fixed;*/
+/*background-image: 
+   linear-gradient(45deg, 
+      rgba(0,0,0,0.1) 25%, 
+      transparent 25%),
+   linear-gradient(-45deg, 
+      rgba(0,0,0,0.1) 25%, 
+      transparent 25%),
+   linear-gradient(45deg, 
+      transparent 75%, 
+      rgba(0,0,0,0.1) 75%),
+   linear-gradient(-45deg, 
+      transparent 75%, 
+      rgba(0,0,0,0.1) 75%);
+background-size: 10px 10px;*/
+
+padding-bottom: 14px;
+
+background-image: 
+   repeating-linear-gradient(-45deg,
+      transparent, 
+      transparent 5px, 
+      rgba(0, 0, 0, 0.1) 5px, 
+      rgba(0, 0, 0, 0.1) 10px);
+
+  background-position: 0 0 fixed;
+  position: absolute;
+}
+
+
+.img-circle,#team-carousel .img-square,.slider-infobar ul{
+    background: #6c334e;
+}
+
+
+

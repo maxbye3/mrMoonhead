@@ -37,6 +37,7 @@ template {
 }
 a {
   background: transparent;
+  cursor: pointer;
 }
 a:active,
 a:hover {
@@ -6383,11 +6384,11 @@ h3.text-secondary {
   }
 
  .deceptionMore .more-btn a{
-    background: #dcb5ba
+    background: #dcb5ba;
+        cursor: not-allowed;
  }
 
-  .deceptionMore .more-btn a:hover{
-    background: #dcb5ba;
+  .deceptionMore .more-btn:hover{
     cursor: not-allowed;
  }
 
@@ -7386,6 +7387,7 @@ select[multiple].input-lg {
   text-align: right;
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
+  height: 80px;
 }
 @media (min-width: 992px) {
   .navbar-collapse-holder {
@@ -7487,11 +7489,11 @@ select[multiple].input-lg {
   height: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: #77bb97;
+  background: #6c334e;
 }
 .navbar-collapse-holder .navbar-collapse .navbar-nav > li > a:after {
   content: "â€¦";
-  color: #77bb97;
+  color: #6c334e;
   display: block;
   position: absolute;
   left: 0;
@@ -7526,13 +7528,13 @@ select[multiple].input-lg {
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a:hover,
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a:focus {
     background-color: rgba(0, 0, 0, 0.05) !important;
-    color: #77bb97 !important;
+    color: #6c334e !important;
   }
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a .caret,
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a:hover .caret,
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a:focus .caret {
-    border-top-color: #77bb97 !important;
-    border-bottom-color: #77bb97 !important;
+    border-top-color: #6c334e !important;
+    border-bottom-color: #6c334e !important;
   }
   .navbar-collapse-holder .navbar-collapse .navbar-nav > .open > a:before {
     bottom: 0;
@@ -7549,7 +7551,7 @@ select[multiple].input-lg {
     position: absolute;
     border: none;
     padding: 9px 0;
-    border-bottom: 5px solid #77bb97;
+    border-bottom: 5px solid #6c334e;
     border-radius: 0;
     min-width: 200px;
     background: rgba(255, 255, 255, 0.9);
@@ -7580,7 +7582,7 @@ select[multiple].input-lg {
   padding: 14px;
   margin-top: 14.5px;
   margin-bottom: 14.5px;
-  background-color: #77bb97;
+  background-color: #6c334e;
   border-radius: 2px;
   float: none;
   vertical-align: top;
@@ -7785,19 +7787,19 @@ select[multiple].input-lg {
   margin-left: -30px;
   bottom: -10px;
   height: 3px;
-  background: #77bb97;
+  background: #6c334e;
 }
 .list-group.list-group__color-primary .list-group-item .icon {
-  background: #77bb97;
+  background: #6c334e;
 }
 .list-group.list-group__color-primary .list-group-item h4:after {
-  background: #77bb97;
+  background: #6c334e;
 }
 .list-group.list-group__color-secondary .list-group-item .icon {
-  background: #f7764d;
+  background: #6c334e;
 }
 .list-group.list-group__color-secondary .list-group-item h4:after {
-  background: #f7764d;
+  background: #6c334e;
 }
 .list-group.list-group__color-tertiary .list-group-item .icon {
   background: #bf5a68;
@@ -8061,9 +8063,20 @@ a:focus {
 .bold > a:hover {
   color: #f7764d;
 }
+
+.fullscreen-bg{
+  background-color: #000;
+  background-position: 0 0 fixed;
+  position: relative;
+  background-size: auto;
+  opacity: .3;
+
+
+}
+
 .top-wrapper {
-  background-image: url('http://ecobox.dan-fisher.com/images/pattern.png');
-  background-color: #77bb97;
+  background: url("../img/grandientBG.png") repeat center center fixed; 
+  background-color: #6c334e;
   background-position: 0 0 fixed;
   position: relative;
   background-size: auto;
@@ -8071,7 +8084,7 @@ a:focus {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .top-wrapper {
     background-size: 512px 512px;
-    background-image: url('http://ecobox.dan-fisher.com/images/retina/pattern@2x.png');
+    background: url("../img/grandientBG.png") repeat center center fixed; 
   }
 }
 .top-wrapper:before {
@@ -8117,7 +8130,7 @@ a:focus {
   width: 140px;
   height: 80px;
   border-radius: 2px;
-  background: #77bb97;
+  background: #6c334e;
   color: #fdffe8;
   text-align: center;
   text-transform: uppercase;
@@ -8383,11 +8396,11 @@ a:focus {
     height: 5px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    background: #77bb97;
+    background: #6c334e;
   }
   .flexnav > li > a:after {
     content: "....";
-    color: #77bb97;
+    color: #6c334e;
     display: block;
     position: absolute;
     left: 0;
@@ -8407,7 +8420,7 @@ a:focus {
   .flexnav > li > a:hover {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.05);
-    color: #77bb97;
+    color: #6c334e;
   }
   .flexnav > li > a:hover:before {
     bottom: 0;
@@ -8426,7 +8439,7 @@ a:focus {
   .flexnav > li ul {
     width: 200px;
     margin: 0;
-    border-bottom: 5px solid #77bb97;
+    border-bottom: 5px solid #6c334e;
     display: none;
   }
   .flexnav > li ul li {
@@ -8469,7 +8482,7 @@ a:focus {
   }
 }
 .tp-banner-holder {
-  padding-bottom: 14px;
+  padding-bottom: 0px;
 }
 .tp-banner-holder:before,
 .tp-banner-holder:after {
@@ -8813,7 +8826,7 @@ a:focus {
   transition: 0.2s;
 }
 .post .post-title > a:hover {
-  color: #77bb97;
+  color: #6c334e;
   -webkit-transition: none;
   transition: none;
 }
@@ -8833,7 +8846,7 @@ a:focus {
   transition: 0.2s;
 }
 .post .post-tags > a:hover {
-  background: #77bb97;
+  background: #6c334e;
   color: #ffffff;
   -webkit-transition: none;
   transition: none;

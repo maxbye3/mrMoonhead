@@ -20,6 +20,7 @@
    <!-- Custom Bootstrap-->
    <!--<link href="http://ecobox.dan-fisher.com/custom/custom-bootstrap.css" rel="stylesheet" media="screen" class="base">-->
    <link href="css/custom-bootstrap.css" rel="stylesheet" media="screen" class="base">
+   <link href="css/moonhead.css" rel="stylesheet" media="screen" class="base">
 
    <link href=" http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen" class="base">
   
@@ -52,11 +53,10 @@
 				<div class="container">
 					
 					<div class="navbar-header">
-						<!-- Text Based Logo -->
-						<a class="navbar-brand" href="index.html">Ecobox</a>
-						<!-- Image based Logo
-						<a href="index.html" class="logo-standard"><img src="images/logo.png" alt="Ecobox" /></a>
-						<a href="index.html" class="logo-retina"><img src="images/retina/logo@2x.png" alt="Ecobox" /></a> -->
+						<!-- Text Based Logo -->					
+								<a class="img-responsive thumbnail img-circle" style="height: 100px; background: #6c334e;">
+									<img src="img/logo.png" style="height: 100px;">	
+								</a>
 					</div>
 					
 					<div class="navbar-collapse-holder">
@@ -71,51 +71,28 @@
 							</button>
 							
 							<ul data-breakpoint="992" class="flexnav">
-								<li class="active"><a href="index.html">Home</a>	
+								<li class="active"><a onclick="homeClick()">Home</a>	
 								</li>
-								<li><a href="page-about.html">Pages</a>
+								<li><a onclick="RMClick()">Work At Rebel Minds</a>
 									<ul>
-										<li><a href="page-about.html">About</a></li>
-										<li><a href="page-products.html">Products</a></li>
-										<li><a href="page-single-product.html">Single Product</a></li>
-										<li><a href="page-special-offer.html">Special offers</a></li>
-										<li><a href="page-eco-technology.html">Eco technology</a></li>
-										<li><a href="page-team-member.html">Team Member</a></li>
+										<li><a onclick="RMClick()">Plumis</a></li>
+										<li><a onclick="RMClick()">Go-Ahead</a></li>
+										<li><a onclick="RMClick()">Deception</a></li>
+										<li><a href="https://www.aiesec.co.uk/">AISEC International</a></li>
+										<li><a href="https://s3.amazonaws.com/max-lol-commit/index.html">Git Commit Project</a></li>
 									</ul>
 								</li>
-								<li><a href="page-elements.html">Features</a>
+								<li><a onclick="VFClick()">Virtually Free</a></li>
+
+								<li><a onclick="blogClick()">Blogs</a>
 									<ul>
-										<li><a href="page-elements.html">Page Elements</a></li>
-										<li><a href="pricing-tables.html">Pricing Tables</a></li>
-										<li><a href="typography.html">Typography</a></li>
-										<li><a href="faqs.html">FAQs</a></li>
-										<li><a href="icons.html">Icons</a></li>
-										<li><a href="404.html">404 Error page</a></li>
-										<li><a href="coming-soon.html">Coming Soon page</a></li>
+										<li><a href="#">Your Brain On Fun</a></li>
+										<li><a href="http://thoughts.rebelminds.com/">Rebel Minds Blog</a></li>
+										<li><a href="https://zombieconversation.wordpress.com/">Conversation With A Zombie</a></li>
+										<li><a onclick="contactClick()">Lol Commit</a></li>	
 									</ul>
 								</li>
-								<li><a href="blog-standard-right.html">Blog</a>
-									<ul>
-										<li><a href="blog-standard-right.html">Blog Standard (right sidebar)</a></li>
-										<li><a href="blog-standard-left.html">Blog Standard (left sidebar)</a></li>
-										<li><a href="blog-full-width.html">Blog Full Width</a></li>
-										<li><a href="blog-two-columns.html">Blog Two Columns</a></li>
-										<li><a href="blog-three-columns.html">Blog Three Columns</a></li>
-										<li><a href="blog-post.html">Single Post</a></li>
-									</ul>
-								</li>
-								<li><a href="gallery-2cols.html">Gallery</a>
-									<ul>
-										<li><a href="gallery-2cols.html">Gallery 2 cols</a></li>
-										<li><a href="gallery-3cols.html">Gallery 3 cols</a></li>
-										<li><a href="gallery-4cols.html">Gallery 4 cols</a></li>
-										<li><a href="gallery-6cols.html">Gallery 6 cols (thumbs)</a></li>
-										<li><a href="gallery-masonry.html">Gallery Masonry</a></li>
-										<li><a href="gallery-single-project1.html">Single Project 1</a></li>
-										<li><a href="gallery-single-project2.html">Single Project 2</a></li>
-									</ul>
-								</li>
-								<li><a href="contacts.html">Contacts</a></li>
+								<li><a onclick="contactClick()">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -143,28 +120,28 @@
 		</div>
 		<!--modal-->
 
-		<!-- Slider
+		<!-- Header
 		================================================== -->
 		<div class="tp-banner-holder">
 			<div class="tp-banner-holder-inner">
 				<div class="tp-banner-container">
 					<div class="tp-banner" >
 						
-                        <div style="width: 100%; height: 500px;"></div>
-                        
-                        <ul>
-							
-							
+                    <div style="width: 100%; height: 500px;"></div>
+					<h1 class="leaderboardText">	I am a physicist turned web developer.<br>
+				My interests are in neuroscience and gaming.</h1>
+					<div class="gradientBG"></div>
 
-						
+					<!-- moonhead video -->
+					<div class="fullscreen-bg">
 
-							<!-- SLIDE#5 -->
-							<li data-transition="fadetobottomfadefromtop" data-slotamount="7" data-masterspeed="1500" >
-								<!-- MAIN IMAGE (blank) -->
-								
-							</li>
-							
-						</ul>
+					<video id="moonvideo" class="fullscreen-bg__video IEVideoFix" preload autoplay muted>
+					<source src="video/moonLapse.mp4" type="video/mp4">					
+					Your browser does not support HTML5 video.
+					</video>
+					</div>
+					<!--moonhead video end-->
+
 					</div>
 				</div>
 
@@ -179,14 +156,14 @@
 						<li>
 							<i class="fa fa-envelope"></i>
 							<span class="name">Send email:</span>
-							<a href="#">support@ecobox.com</a>
+							<a href="mailto:someone@example.com?Subject=Hello">maxbye@gmail.com</a>
 						</li>
 					</ul>
 				</div>
 
 			</div>
 		</div>
-		<!-- Slider / End -->
+		<!-- Header / End -->
 
 
 	</div>
@@ -197,7 +174,7 @@
 		<div class="container">
 			
 			<!-- Rebel Minds -->
-			<section class="section">
+			<section class="section rebelminds">
 				<div class="title-bordered" data-animation="fadeInUp" data-animation-delay="0">
 					<h2>Work at Rebel Minds</h2>
 				</div>
@@ -281,7 +258,7 @@
 							<div class="icobox-desc">
 								<div class="icobox-desc-inner1">
 									<div class="icobox-desc-inner2">
-										<h3><a href="#">Deception</a></h3>
+										<h3><a>Deception</a></h3>
 										<p>A mobile game which sees players turn on each other as they try to work out who they can trust.</p>
 										<p>An internal product based on the popular physical card game Avalon, pitched and developed at Rebel Minds.</p>
 									</div>
@@ -297,7 +274,7 @@
 									</ul>
 
 								<div class="cta-btn more-btn">
-									<a href="#" class="btn btn-primary btn-lg">In Development</a>
+									<a class="btn btn-primary btn-lg">In Development</a>
 								</div>
 							</div>
 
@@ -311,9 +288,9 @@
 			<hr class="hr-lg" />
 			
 			<!-- Stress Free -->
-			<section class="section">
+			<section class="section virtuallyfree">
 				<div class="title title__lg" data-animation="fadeInUp" data-animation-delay="0">
-					<h2>Virtually Free (2014 - 2015)</h2>
+					<h2>Stress Free (2014 - 2015)</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-6" data-animation="bounceIn" data-animation-delay="200">
@@ -329,7 +306,6 @@
 						</a>
 					</div>
 					<div class="col-md-8 col-sm-6">
-						<h2 class="bold"><a href="#">About Stress Free</a></h2>
 						
 						<p>
 							My main project for Virtually Free is Stress Free. Initially, a collection of different therapies. <br>
@@ -508,12 +484,49 @@
 		<footer class="footer">
 			<div class="container">
 				
-				<!-- Github Feed -->
+				<!-- Lol Commit Loading -->
+				<div class="twitter-feed-wrapper">
+					<div id="twitter-feed" class="twitter-feed"></div>
+				</div>
+				<!-- Lol Commit End -->
+
+
+
+
+
+					<!-- Lol Commit Feed -->
+					
+					<div class="lol-commit-feed">
+					<!-- Carousel Navigation -->
+					<div class="prev-next-holder pull-right hidden-xs">
+						<a class="prev-btn" id="git-carousel-prev"></a>
+						<a class="next-btn" id="git-carousel-next"></a>
+					</div>
+					<!-- Carousel Navigation / End -->
+
+					<h2>Git Commit Feed</h2>
+					<p>I put together a software package at Rebel Minds that takes a picture or creates an animated gif of the person git committing their work. <br>
+					Below, are a live feed of results as I work!<br> 
+					
+
 				
 
 
+						<!-- Carousel -->
+						<div id="git-carousel" class="owl-carousel">
 				
-				<!-- Twitter Feed / End-->
+				
+							
+						</div>
+						<!-- Carousel / End -->
+
+						<center><a class="btn btn-primary">View Rebel Minds Lol Commit project</a></center>
+
+				</div>
+				<!-- Lol Commit Feed / End-->
+
+				
+
 
 				<div class="hr hr__two-half">
 					<div class="left-hr"></div>
@@ -678,6 +691,34 @@
 				soloArrowRightVOffset:20
 			});
 	   });
+
+
+	       /* ----------------------------------------------------------- */
+    /*  5. Carousel
+    /* ----------------------------------------------------------- */
+    var owl = $("#git-carousel");
+
+    owl.owlCarousel({
+
+        items : 3, //10 items above 1000px browser width
+        itemsDesktop : [1000,3], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
+        itemsTablet: [600,2], //2 items between 600 and 0;
+        itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
+        pagination : false
+
+    });
+    
+
+    // Custom Navigation Events
+    $("#git-carousel-next").click(function(){
+        owl.trigger('owl.next');
+    });
+    $("#git-carousel-prev").click(function(){
+        owl.trigger('owl.prev');
+    });
+
+
 	</script>
 
 </body>
