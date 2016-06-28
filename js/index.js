@@ -3,10 +3,9 @@ var loadGit = false; // make sure git isn't int more than once
 
 // launch video at the right spot
 setTimeout(function(){ 
-$("#moonvideo").fadeIn();
-document.getElementById('moonvideo').currentTime = 20;
-document.getElementById('moonvideo').play();
-
+  $("#moonvideo").fadeIn('slow');
+  document.getElementById('moonvideo').currentTime = 20;
+  document.getElementById('moonvideo').play();
  }, 1500);
 
 setInterval(function(){ 
@@ -19,9 +18,20 @@ setInterval(function(){
 
 // append image into the modal
 function appendImage(imgSrc,description){
-  $(".appendImg").html('<img src="'+imgSrc+'" width="100%">'); 
+  $(".appendImg").html('<center><img src="'+imgSrc+'" width="70%"></center>'); 
   $(".modal-title").html(description);  
 }
+
+// append video into modal
+function appendVideo(videoSrc,description){
+  $(".appendImg").html('<center><iframe width="420" height="315" src="'+videoSrc+'" allowfullscreen></iframe></center>');
+  $(".modal-title").html(description);  
+}
+
+//when modal closed
+$('#myModal').on('hidden.bs.modal', function () {
+  $(".appendImg").html('');
+})
 
 // Click the home button to scroll up top of page
 function homeClick(){

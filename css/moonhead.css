@@ -82,5 +82,65 @@ background-image:
     background: #6c334e;
 }
 
+.leaderboardText{
+    position: absolute;
+    top: 0px;
+}
+
+body{
+    color: black;
+}
+
+.title h2:before {
+    border-left: 1px solid black;
+    border-right: 2px solid black;
+}
+
+.title h2:after {
+    border-left: 3px solid #6c334e;
+    border-right: 4px solid #6c334e;
+}
+
+.leaderboardText {
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+    left: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Bebas';
+}
+
+@media (max-width: 760px) {
+.leaderboardText {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+}
+
+
+.moon-logo{
+    height: 100px; 
+    background: #6c334e; 
+    border: none; 
+    z-index: 100
+}
+
+.nav-bar-moon{
+    float: left; 
+    padding: 5px;
+    display: none;
+}
+
+@media (max-width: 992px) {
+  .moon-logo{
+    display: none;
+   }
+   .nav-bar-moon{
+       display: initial;
+   }
+}
 
 

@@ -6,7 +6,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Ecobox | Home</title>
+	<title>Moonguy's Moonbase</title>
 	<meta name="description" content="Get The Wesbite Working">
 	<meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,8 +17,7 @@
 	
 	<!-- CSS
 	================================================== -->
-   <!-- Custom Bootstrap-->
-   <!--<link href="http://ecobox.dan-fisher.com/custom/custom-bootstrap.css" rel="stylesheet" media="screen" class="base">-->
+   <!-- Custom Bootstrap-->  
    <link href="css/custom-bootstrap.css" rel="stylesheet" media="screen" class="base">
    <link href="css/moonhead.css" rel="stylesheet" media="screen" class="base">
 
@@ -26,7 +25,7 @@
   
 
    <!-- Animate CSS-->
-   <link href="http://ecobox.dan-fisher.com/css/animate.min.css" rel="stylesheet" media="screen">
+   <link href="css/animate.min.css" rel="stylesheet" media="screen">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,11 +34,11 @@
 	
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="http://ecobox.dan-fisher.com/images/favicon.ico">
-	<link rel="apple-touch-icon" href="http://ecobox.dan-fisher.com/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="http://ecobox.dan-fisher.com/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="http://ecobox.dan-fisher.com/images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="http://ecobox.dan-fisher.com/images/apple-touch-icon-144x144.png">
+	<link rel="shortcut icon" href="img/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
 	
 </head>
 <body>
@@ -54,7 +53,7 @@
 					
 					<div class="navbar-header">
 						<!-- Text Based Logo -->					
-								<a class="img-responsive thumbnail img-circle" style="height: 100px; background: #6c334e;">
+								<a class="img-responsive thumbnail img-circle moon-logo">
 									<img src="img/logo.png" style="height: 100px;">	
 								</a>
 					</div>
@@ -62,6 +61,9 @@
 					<div class="navbar-collapse-holder">
 
 						<div class="clearfix">
+
+							<img src="img/nav-bar-moon.png" height="80px" class="nav-bar-moon">
+
 							<button type="button" class="navbar-toggle">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
@@ -82,8 +84,13 @@
 										<li><a href="https://s3.amazonaws.com/max-lol-commit/index.html">Git Commit Project</a></li>
 									</ul>
 								</li>
-								<li><a onclick="VFClick()">Virtually Free</a></li>
-
+								<li><a onclick="VFClick()">Stress Free</a>
+								<ul>
+										<li><a onclick="VFClick()">About Virtually Free</a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendVideo('https://www.youtube.com/embed/AMTK_FKz3XE','About Virtually Free')">Virtually Free Overview Video</a></li>
+										<li><a data-toggle="modal" data-target="#myModal" onclick="appendVideo('https://www.youtube.com/embed/FxmR65tFSDw','Tech For Good On Stress Free')">Tech For Good On Stress Free</a></li>
+									</ul>
+								</li>
 								<li><a onclick="blogClick()">Blogs</a>
 									<ul>
 										<li><a href="#">Your Brain On Fun</a></li>
@@ -128,8 +135,7 @@
 					<div class="tp-banner" >
 						
                     <div style="width: 100%; height: 500px;"></div>
-					<h1 class="leaderboardText">	I am a physicist turned web developer.<br>
-				My interests are in neuroscience and gaming.</h1>
+					<h1 class="leaderboardText">physicist turned web developer <br>interested in psychology and gaming.</h1>
 					<div class="gradientBG"></div>
 
 					<!-- moonhead video -->
@@ -148,14 +154,14 @@
 				<div class="slider-infobar">
 					<i class="fa infobar-trigger"></i>
 					<ul>
-						<li>
+						<!--<li>
 							<i class="fa fa-phone"></i>
 							<span class="name">Call us:</span>
 							<span class="highlight">1-888-123-4567</span>
-						</li>
+						</li>-->
 						<li>
 							<i class="fa fa-envelope"></i>
-							<span class="name">Send email:</span>
+							<span class="name">Send me mail:</span>
 							<a href="mailto:someone@example.com?Subject=Hello">maxbye@gmail.com</a>
 						</li>
 					</ul>
@@ -290,11 +296,11 @@
 			<!-- Stress Free -->
 			<section class="section virtuallyfree">
 				<div class="title title__lg" data-animation="fadeInUp" data-animation-delay="0">
-					<h2>Stress Free (2014 - 2015)</h2>
+					<h2>Stress Free <i>(2014 / 2015)</i></h2>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-6" data-animation="bounceIn" data-animation-delay="200">
-						<a href="images/samples/invention-img5.jpg" class="img-responsive thumbnail thumbnail-lg img-circle magnific-img">
+						<a data-toggle="modal" data-target="#myModal" onclick="appendVideo('https://www.youtube.com/embed/AMTK_FKz3XE','About Virtually Free')" class="img-responsive thumbnail thumbnail-lg img-circle">
 							<img src="img/virtuallyFree/island.png" alt="" class="img-circle">
 							<span class="thumbnail-caption">
 								<span class="thumbnail-caption-inner">
@@ -324,7 +330,7 @@
 							As the therapy progresses the simulator can be manipulated. For instance, the crowd can turn as the user's speech becomes more complicated.
 						</p>
 					 	<p>
-							Click here to see a <a href="http://www.youtube.com/embed/AMTK_FKz3XE">video overview</a> or <a href="http://www.youtube.com/embed/FxmR65tFSDw">watch the Tech For Good press piece</a>.
+							Click here to see a <a data-toggle="modal" data-target="#myModal" onclick="appendVideo('https://www.youtube.com/embed/AMTK_FKz3XE','About Virtually Free')">video overview</a> or <a data-toggle="modal" data-target="#myModal" onclick="appendVideo('https://www.youtube.com/embed/FxmR65tFSDw','Tech For Good On Stress Free')">watch the Tech For Good press piece</a>.
 						</p>
 
 					
@@ -464,7 +470,7 @@
 						<p>Your brain on fun is one part blog and one part animated series on why that valuable piece of meat in your head loves video games, kanye west and straight-to-video nick cage catastrophes.</p>
 						<p>Why we human beings are wired to watch a pug fall over in yoda outfits for ten minutes then watch a TED talk.</p>
 						<p>This blog is dedicated to all those times that you say to Mike (over a beer) or Kara (at the watercooler), “I have no idea why I watch this… but I love it”</p>
-						<a href="/"><b>If you want to learn how and why things grab your attention then click here to read on.</b></a>
+						<a href="blog.html"><b>If you want to learn how and why things grab your attention then click here to read on.</b></a>
 						<!--<button type="submit" class="btn btn-primary btn-lg">Read More</button>-->
 					</div>
 				</div>
@@ -536,40 +542,37 @@
 				<!-- Widgets -->
 				<section class="footer-widgets">
 					<div class="row">
-						<div class="col-xs-6 col-sm-3 col-md-3">
+						<!--<div class="col-xs-6 col-sm-4 col-md-4">
 							<!-- Phone Widget -->
-							<div class="widget widget__footer">
+							<!--<div class="widget widget__footer">
 								<h4 class="widget-title">Phone</h4>
 								<div class="widget-body">
 									<ul class="info-list">
-										<li>+ 1 888 234 5678</li>
-										<li>+ 1 888 234 5678</li>
+										<li>07815437754</li>
 									</ul>
 								</div>
 							</div>
-							<!-- Phone Widget / End -->
-						</div>
-						<div class="col-xs-6 col-sm-3 col-md-3">
+						</div><!-- Phone Widget / End -->
+						<div class="col-xs-6 col-sm-4 col-md-4">
 							<!-- Email Widget -->
 							<div class="widget widget__footer">
 								<h4 class="widget-title">Email</h4>
 								<div class="widget-body">
 									<ul class="info-list">
-										<li><a href="mailto:your_email_goes_here">ecobox@gmail.com</a></li>
-										<li><a href="mailto:your_email_goes_here">support@ecobox.com</a></li>
+										<li><a href="mailto:maxbye@gmail.com">maxbye@gmail.com</a></li>
 									</ul>
 								</div>
 							</div>
 							<!-- Email Widget / End -->
 						</div>
 						<div class="clearfix visible-xs"></div>
-						<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="col-xs-6 col-sm-4 col-md-4">
 							<!-- Address Widget -->
 							<div class="widget widget__footer">
-								<h4 class="widget-title">Address</h4>
+								<h4 class="widget-title">Old Website</h4>
 								<div class="widget-body">
 									<ul class="info-list">
-										<li>101 West Street, New York<br> NY 12345</li>
+										<li></li>
 									</ul>
 								</div>
 							</div>
@@ -581,12 +584,13 @@
 								<h4 class="widget-title">Social</h4>
 								<div class="widget-body">
 									<ul class="social-list social-list__footer list-unstyled">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="https://www.facebook.com/moxbee"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/mr_moonhead"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://uk.linkedin.com/in/maxbye"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="github.com/maxbye3"><i class="fa fa-github"></i></a></li>
+										<!--
 										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i></a></li>-->
 									</ul>
 								</div>
 							</div>
@@ -603,7 +607,7 @@
 		<!-- Copyright -->
 		<div class="copyright">
 			<div class="container">
-				&copy; Ecobox, 2014. All rights reserved. <span class="copy-txt"><a href="http://themeforest.net/user/dan_fisher/portfolio">Done by Dan Fisher</a></span>
+				&copy; Mr. Moonhead 2016. All rights reserved by Max Bye.</span>
 			</div>
 		</div>
 		<!-- Copyright / End -->
@@ -638,59 +642,33 @@
 	================================================== -->
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery-1.11.0.min.js"></script>
-	<script src="http://ecobox.dan-fisher.com/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="http://ecobox.dan-fisher.com/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<!-- hoverIntent -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.hoverIntent.minified.js"></script>
+	<script src="js/jquery.hoverIntent.minified.js"></script>
 	<!-- FlexNavigation -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.flexnav.min.js"></script>
+	<script src="js/jquery.flexnav.min.js"></script>
 	<!-- Isotope -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.isotope.min.js"></script>
-	<script src="http://ecobox.dan-fisher.com/js/jquery.imagesloaded.min.js"></script>
-	<!-- Twitter -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.twitter.js"></script>
-	<!-- Flickr Feed -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.flickrfeed.js"></script>
-	<!-- FitVid (responsive video) -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.fitvids.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
 	<!-- Owl Carousel -->
-	<script src="http://ecobox.dan-fisher.com/js/owl.carousel.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	<!-- Magnific Popup -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<!-- Magnific Popup -->
-	<script src="http://ecobox.dan-fisher.com/js/jquery.appear.js"></script>
+	<script src="js/jquery.appear.js"></script>
 	
 	<script src="js/index.js"></script>
 
 
 	<!-- Init File -->
-	<script src="http://ecobox.dan-fisher.com/js/custom.js"></script>
+	<script src="js/custom.js"></script>
 		
-	<!-- Home Page specific scripts
-	================================================== -->
-	<!-- jQuery REVOLUTION Slider  -->
-	<script src="http://ecobox.dan-fisher.com/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-	<script src="http://ecobox.dan-fisher.com/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 	<script>
-		jQuery(document).ready(function() {
-			jQuery('.tp-banner').revolution({
-				delay:6000,
-				startwidth:1140,
-				startheight:480,
-				hideThumbs:10,
-				fullWidth:"on",
-				forceFullWidth:"on",
-				hideCaptionAtLimit:480,
-				//navigationType: "none",
-				soloArrowLeftHOffset:20,
-				soloArrowRightHOffset:20,
-				soloArrowLeftVOffset:20,
-				soloArrowRightVOffset:20
-			});
-	   });
+
 
 
 	       /* ----------------------------------------------------------- */
