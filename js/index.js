@@ -85,6 +85,7 @@ addSelfie('2.jpg');
 addSelfie('3.jpg');
 addSelfie('4.jpg');
 addSelfie('5.jpg');
+addSelfie('14.jpg');
 addSelfie('6.gif');
 addSelfie('7.gif');
 addSelfie('8.jpg');
@@ -93,6 +94,7 @@ addSelfie('10.jpg');
 addSelfie('11.jpg');
 addSelfie('12.gif');
 addSelfie('13.gif');
-addSelfie('14.jpg');
 addSelfie('15.gif');
+addSelfie('17.gif');
+addSelfie('16.gif');
 
